@@ -1,4 +1,6 @@
-// ג  
+// ג 
+let playAgain=true;
+while(playAgain){
 const number = Math.floor(Math.random() * 20) + 1;
 let guess;
 let count=0;
@@ -21,4 +23,6 @@ if(count>3&&count<=6){
 if(count>=7){
     alert(`אפשר לשפר! ניחשת אחרי ${count} ניסיונות`)
     console.log(`אפשר לשפר! ניחשת אחרי ${count} ניסיונות`)
+}
+playAgain=(confirm("לשחק שוב?")) 
 }
